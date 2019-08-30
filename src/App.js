@@ -1,30 +1,26 @@
 import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
+
 import Header from "./Components/Header/Header";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Form from "./Components/Form/Form";
 import Product from "./Components/Product/Product";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-
   render() {
     return (
       <div>
-        <div className="Header">
+        <div>
           <Header />
         </div>
-        <div className="Dashboard">
+        <div>
           <Dashboard />
-          <div className="Product">
+          <div>
             <Product />
           </div>
         </div>
-        <form className="Form">
+        <form>
           <Form />
         </form>
       </div>
